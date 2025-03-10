@@ -1,4 +1,4 @@
-#define EMG A7
+#define EMG A0
 
 void setup() {
     Serial.begin(9600);
@@ -7,7 +7,8 @@ void setup() {
 
 void loop() {
 
-    int sensorValue = analogRead(A7);
-    Serial.println(sensorValue);
+    float rawSensorValue = analogRead(EMG);
+    float convertedVoltage = map(rawSensorValue, 0, 1023, 0, 5);
+    Serial.println(rawSensorValue);
     delay(1);
 }
