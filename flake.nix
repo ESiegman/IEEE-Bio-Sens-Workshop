@@ -19,6 +19,7 @@
               pip
               venvShellHook
               pyserial
+              numpy
               matplotlib
             ]);
         };
