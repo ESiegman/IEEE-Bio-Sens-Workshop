@@ -15,7 +15,7 @@ import time
 # matplotlib
 
 # --- Configuration ---
-# User should set these values to match their setup
+# Set these values to match the setup
 SERIAL_PORT = '/dev/COM4'  
 BAUD_RATE = 9600
 GRID_ROWS = 8  # Number of rows in your sensor grid
